@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vietnamské Bistro</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,12 +14,12 @@
             <div class="address">
                 <h3>Prešov</h3>
                 <p>Slovenská 79<p>
-                <p>Objednávky: 0911 758 094</p>
+                <p><b>Objednávky:</b><br>0911758094</p>
             </div>
 	    <div class="address">
                 <h3>Otváracie hodiny</h3>
-                <p><b>Pon-Pia:</b><br> 9:00 - 19:00</p>
-		<p><b>Sob:</b><br> 10:00 - 16:00</p>
+                <p><b>Pon-Pia:</b><br>9:00 - 19:00</p>
+		<p><b>Sob:</b><br>10:00 - 16:00</p>
 		<p><b>Ned:</b><br> Zatvorené</p>
                 
             </div>
@@ -173,6 +174,50 @@
             </div>
         </div>
     </footer>
+	<!-- Top Button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">&#8593;</button>
+    
+    <!-- Modal and script section -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modalImageContainer">
+            <img id="modalImage" src="">
+        </div>
+    </div>
+    <script>
+        function openModal(imageSrc, imageAlt) {
+            var modal = document.getElementById("myModal");
+            var modalImg = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+            modalImg.alt = imageAlt;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+        // Scroll to top functionality
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            var topBtn = document.getElementById("topBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        }
+    </script>
     <div id="myModal" class="modal">
         <span class="close" onclick="closeModal()">&times;</span>
         <div class="modal-content" id="modalImageContainer">
