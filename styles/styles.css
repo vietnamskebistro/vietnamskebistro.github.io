@@ -64,12 +64,30 @@
             cursor: pointer;
         }
         footer {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: auto;
-        }
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around the text */
+    text-align: center; /* Centered text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+       }
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-content .column {
+    flex: 1; /* Make each column take equal space */
+    margin: 10px; /* Margin between columns */
+}
+
+footer p {
+    margin: 5px 0; /* Small margin for paragraphs */
+}
+	
         .modal {
             display: none;
             position: fixed;
