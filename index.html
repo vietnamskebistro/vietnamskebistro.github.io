@@ -14,24 +14,26 @@
             <div class="address">
                 <h3>Prešov</h3>
                 <p>Slovenská 79<p>
-                <p><b>Objednávky:</b><br>0911758094</p>
+                <p><b>Objednávky:</b><br>0911 758 094</p>
             </div>
 	    <div class="address">
                 <h3>Otváracie hodiny</h3>
                 <p><b>Pon-Pia:</b><br>9:00 - 19:00</p>
-		<p><b>Sob:</b><br>10:00 - 16:00</p>
-		<p><b>Ned:</b><br> Zatvorené</p>
+		<p><b>Sobota:</b><br>10:00 - 16:00</p>
+		<p><b>Nedeľa:</b><br> Zatvorené</p>
                 
             </div>
-            <div class="address">
-                <h3>Sabinov</h3>
-                <p>Ulica</p>
-                <p>Objednávky: 098-765-4321</p>
-            </div>
+            
         </div>
+
+
+
     </header>
+
     <div class="content">
+
         <div class="container">
+
             <div>
                 <img src="images/jedlo/pho.jpg" alt="Pho" onclick="openModal('images/jedlo/pho.jpg', 'Pho')">
                 <h2>Pho</h2>
@@ -163,27 +165,22 @@
     <footer>
     <div class="footer-content">
         <div class="column">
-            <p>Prešov:<br>Slovenská 79<br>Tel.: 0911758094</p>
+            <p>Prešov:<br>Slovenská 79<br>Tel.: 0911 758 094</p>
         </div>
         <div class="column">
-            <p>
-Otváracie hodiny<br>
-
-Pon-Pia:<br>
-9:00 - 19:00<br>
-
-Sob:<br>
-10:00 - 16:00<br>
-
-Ned:<br>
-Zatvorené
-</p>
-        </div>
-        <div class="column">
-            <p>Sabinov:<br>Nazov Ulice<br>Tel.: 1234567890</p>
+            <p>Otváracie hodiny:<br>Pon-Pia: 9:00 - 19:00<br>Sob: 10:00 - 16:00<br>Ned: Zatvorené</p>
         </div>
     </div>
-    </footer>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2630.506060729995!2d21.246114315673347!3d48.99766567930245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e40a1a64390db%3A0x400f7d1c6972070!2sSlovensk%C3%A1%2079%2C%20080%2001%20Pre%C5%A1ov%2C%20Slovakia!5e0!3m2!1sen!2sus!4v1672934676284!5m2!1sen!2sus" 
+            class="map-iframe" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</footer>
 	<!-- Top Button -->
     <button onclick="topFunction()" id="topBtn" title="Go to top">&#8593;</button>
     
@@ -194,6 +191,9 @@ Zatvorené
             <img id="modalImage" src="">
         </div>
     </div>
+
+
+
     <script>
         function openModal(imageSrc, imageAlt) {
             var modal = document.getElementById("myModal");
@@ -248,5 +248,7 @@ Zatvorené
             modal.style.display = "none";
         }
     </script>
+	
+
 </body>
 </html>

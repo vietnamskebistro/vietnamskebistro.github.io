@@ -145,6 +145,49 @@ footer p {
 #topBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
+footer {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around the text */
+    text-align: center; /* Centered text */
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.footer-content .column {
+    flex: 1; /* Make each column take equal space */
+    margin: 10px; /* Margin between columns */
+}
+
+footer p {
+    margin: 5px 0; /* Small margin for paragraphs */
+}
+
+.map-container {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.map-iframe {
+    width: 33.33%; /* About 1/3 of the original size */
+    height: 300px; /* Adjust the height as needed */
+    border: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .map-iframe {
+        width: 100%; /* Full width on mobile devices */
+        height: 200px; /* Adjust the height for mobile devices */
+    }
+}
+
     
 /* Media query for tablets and smaller devices */
     @media (max-width: 768px) {
